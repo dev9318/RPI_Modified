@@ -1,0 +1,54 @@
+{
+  "refreshcount": {
+    "2": 10,
+    "1": 10,
+    "4": 10
+  },
+  "tickerpad": [
+    0,
+    2
+  ],
+  "logoscale": [
+    200,
+    40
+  ],
+  "canvasbg": "black",
+  "tickerrectcolor": "black",
+  "tilingpad": [
+    2,
+    2
+  ],
+  "mainpad": [
+    [
+      1,
+      1
+    ],
+    [
+      50,
+      1
+    ]
+  ],
+  "tickerstyle": [
+    "white",
+    [
+      "Helvectica",
+      "24"
+    ]
+  ],
+  "directories": [
+    "Downloads/InstiApp",
+    "Downloads/Hostel5",
+    "Downloads/WnCC",
+    "Downloads/Academics",
+    "Downloads/Culturals",
+    "Downloads/Sports",
+    "Downloads/Technical"
+  ],
+  "picspeed": 4000,
+  "delimiter": "         ",
+  "tickerspeed": [
+    1,
+    10
+  ],
+  "picsatatime": 1
+}
