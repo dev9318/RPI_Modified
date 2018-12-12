@@ -18,7 +18,7 @@ import datetime
 class App:
 
     def __init__(self, master):
-        print ("Starting Noticeboard: ") , (datetime.datetime.fromtimestamp(int("1284101485")).strftime('%Y-%m-%d %H:%M:%S'))
+        print (("Starting Noticeboard: ") , (datetime.datetime.fromtimestamp(int("1284101485")).strftime('%Y-%m-%d %H:%M:%S')))
 
         self.config = {'directories': ['Academics', 'Cultural', 'Sports', 'Technical', 'Hostel5'],
                        'delimiter': "         ",
@@ -80,7 +80,7 @@ class App:
         if self.config['picsatatime'] == 4:
             singleimgbox[1] = singleimgbox[1] / \
                 2 - self.config['tickerpad'][1] / 2
-        print ("Recommended image size: ") , str(singleimgbox[0]) , "x" , str(singleimgbox[1]) , " (Screen size: " , str(self.windowd[0]) , "x" , str(self.windowd[1]) + ")"
+        print (("Recommended image size: ") , str(singleimgbox[0]) , "x" , str(singleimgbox[1]) , " (Screen size: " , str(self.windowd[0]) , "x" , str(self.windowd[1]) + ")")
         self.can.move(
             self.tickertext, -a[0], self.windowd[1] + a[1] - self.config['tickerpad'][1])
         self.tickerstate = 0
