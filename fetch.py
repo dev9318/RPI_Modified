@@ -10,8 +10,8 @@ import ssl
 from PIL import Image
 
 
-FROM = "hostel5"
-
+FROM = "hostel"
+FROM += open("/home/pi/Desktop/hostel_name", "r").read()
 BASEURL = 'http://noticeboard.wncc-iitb.org/'
 INSTIURL = 'https://insti.app/api/events'
 BASE_DIR = 'Downloads/'
