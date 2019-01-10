@@ -24,4 +24,4 @@ The contents of this folder are to be copied to the RPi. There are 3 essential p
 @xset s noexpose
 @xset dpms 0 0 0
 ```
-Ctrl + X, Y and Enter. Hit `sudo reboot`
+Ctrl + X, Y and Enter. Hit `sudo reboot` ...
