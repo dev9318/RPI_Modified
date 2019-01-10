@@ -17,7 +17,7 @@ The contents of this folder are to be copied to the RPi. There are 3 essential p
 6. On the RPi, execute `sudo crontab -e`. It might prompt you to choose a text editor. (Choose nano if you don't know what to do.) Add the following line at the bottom of the file- `0 */6 * * * (cd /home/pi/rpi/; python3 fetch.py >> /home/pi/rpi/TV_log.txt 2>&1)`. This would run our fetch script every 6 hours and save all output in the TV_log file created inside `~/rpi`. 
 7. On the RPi, cd into the `rpi` folder and execute `chmod 755 launcher.sh`.
 8. On the RPi, execute `sudo nano /home/pi/.config/lxsession/LXDE-pi/autostart`. Add the following line to the bottom- `@sh /home/pi/rpi/launcher.sh`.
-9. Disable standby screen blanking. Execute `sudo nano ~/.config/lxsession/LXDE-pi/autostart` and add the following-
+9. Disable standby screen blanking. Execute `sudo nano ~/.config/lxsession/LXDE-pi/autostart` and add the following
 ```
 @xset s 0 0
 @xset s noblank
