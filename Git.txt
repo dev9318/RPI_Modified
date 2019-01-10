@@ -1,0 +1,10 @@
+git clone https://github.com/MayuBhattu/RPi-Logs.git
+cd RPi-Logs
+git remote add upstream https://github.com/MayuBhattu/RPi-Logs.git
+
+git add .
+git commit -m "update logs"
+
+git fetch upstream
+git merge upstream/master
+git push origin master
