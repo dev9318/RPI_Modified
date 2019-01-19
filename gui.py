@@ -20,7 +20,7 @@ class App:
     def __init__(self, master):
         print (("Starting Noticeboard: ") , (datetime.datetime.fromtimestamp(int("1284101485")).strftime('%Y-%m-%d %H:%M:%S')))
 
-        self.config = {'directories': ['Academics', 'Cultural', 'Sports', 'Technical', 'Hostel5'],
+        self.config = {'directories': ['Academics', 'Cultural', 'Sports', 'Technical', 'Hostel'],
                        'delimiter': "         ",
                        'tickerspeed': [1, 10],  # x pixels per y milliseconds
                        'tickerpad': [0, 2],  # lower, upper
