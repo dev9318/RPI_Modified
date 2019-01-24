@@ -1,3 +1,4 @@
+cd /home/pi/Desktop/RPI_Modified
 git add .
 git commit -m "Update code"
 git fetch upstream
