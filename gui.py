@@ -39,7 +39,7 @@ class App:
                        'logoscale': [200, 40]
                        }
         try:
-            x = open('config.json')
+            x = open("/home/pi/Desktop/config.json")
             self.config = json.loads(x.read())
             x.close()
         except Exception as e:
