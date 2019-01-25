@@ -44,7 +44,7 @@
     "/home/pi/Desktop/Downloads/Sports",
     "/home/pi/Desktop/Downloads/Technical"
   ],
-  "picspeed": 4000,
+  "picspeed": 5000,
   "delimiter": "         ",
   "tickerspeed": [
     1,
