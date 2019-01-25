@@ -36,13 +36,13 @@
     ]
   ],
   "directories": [
-    "Downloads/InstiApp",
-    "Downloads/Hostel9",
-    "Downloads/WnCC",
-    "Downloads/Academics",
-    "Downloads/Culturals",
-    "Downloads/Sports",
-    "Downloads/Technical"
+    "/home/pi/Desktop/Downloads/InstiApp",
+    "/home/pi/Desktop/Downloads/Hostel9",
+    "/home/pi/Desktop/Downloads/WnCC",
+    "/home/pi/Desktop/Downloads/Academics",
+    "/home/pi/Desktop/Downloads/Culturals",
+    "/home/pi/Desktop/Downloads/Sports",
+    "/home/pi/Desktop/Downloads/Technical"
   ],
   "picspeed": 4000,
   "delimiter": "         ",
