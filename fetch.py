@@ -67,12 +67,12 @@ def prepare_online_list(data):
             name = photo['name']
             online_list.append((url, os.path.join(BASE_DIR, title, name.replace('|',''))))
 
-    with open("config.json", "r") as jsonFile:
+    with open("/home/pi/Desktop/config.json", "r") as jsonFile:
         config = json.load(jsonFile)
 
     config["directories"] = directory_list
 
-    with open("config.json", "w") as jsonFile:
+    with open("/home/pi/Desktop/config.json", "w") as jsonFile:
         json.dump(config, jsonFile, indent=2)
     return online_list
 
@@ -98,12 +98,12 @@ def InstiApp_online(InstiAppData):
         refined_name = refined_name.replace('/','')
         online_list.append((url, os.path.join(BASE_DIR, title, refined_name)))
 
-    with open("config.json", "r") as jsonFile:
+    with open("/home/pi/Desktop/config.json", "r") as jsonFile:
         config = json.load(jsonFile)
 
     config["directories"].append(directory_list[0])
 
-    with open("config.json", "w") as jsonFile:
+    with open("/home/pi/Desktop/config.json", "w") as jsonFile:
         json.dump(config, jsonFile, indent=2)
     return online_list
 
