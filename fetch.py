@@ -14,8 +14,8 @@ FROM = "hostel"
 FROM += open("/home/pi/Desktop/hostel_name", "r").read()
 BASEURL = 'http://noticeboard.wncc-iitb.org/'
 INSTIURL = 'https://insti.app/api/events'
-BASE_DIR = 'Downloads/'
-Insti_dir = 'Downloads/InstiApp/'
+BASE_DIR = '/home/pi/Desktop/Downloads/'
+Insti_dir = '/home/pi/Desktop/Downloads/InstiApp/'
 
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
