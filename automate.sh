@@ -1,3 +1,4 @@
+#!/bin/sh
 cd /home/pi/Desktop/RPI_Modified
 git add .
 git commit -m "Update code"
