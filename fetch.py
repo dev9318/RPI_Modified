@@ -170,6 +170,7 @@ def download_files(online_list, existing_files):
                 img_anti = img_org.resize((width, height), Image.ANTIALIAS)
                 img_anti.save(image_file)
             except:
+                print("error!")
                 continue
 
 
