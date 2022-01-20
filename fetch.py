@@ -11,8 +11,8 @@ from PIL import Image
 
 
 FROM = "hostel"
-FROM += open("/home/pi/Desktop/hostel_name", "r").read()
-BASEURL = 'http://noticeboard.wncc-iitb.org/'
+FROM += "16"
+# BASEURL = 'http://noticeboard.wncc-iitb.org/'
 INSTIURL = 'https://insti.app/api/events'
 BASE_DIR = '/home/pi/Desktop/Downloads/'
 Insti_dir = '/home/pi/Desktop/Downloads/InstiApp/'
@@ -31,11 +31,11 @@ def urljoin(*args):
     return "/".join(map(lambda x: str(x).rstrip('/').lstrip('/'), args))
 
 
-def fetch_data():
-    url = urljoin(BASEURL, 'list/', '?from=' + FROM)
-    response = urlopen(url, context=ctx)
-    data = json.loads(response.read().decode('utf-8'))
-    return data
+# def fetch_data():
+#     url = urljoin(BASEURL, 'list/', '?from=' + FROM)
+#     response = urlopen(url, context=ctx)
+#     data = json.loads(response.read().decode('utf-8'))
+#     return data
 
 def fetchInsti():
     InstiResponse = urlopen(INSTIURL, context=ctx)
@@ -63,9 +63,9 @@ def prepare_online_list(data):
         for p_index in gallery['photos']:
             photo = gallery['photos'][p_index]
             img_url = photo['url']
-            url = urljoin(BASEURL, img_url)
+            # url = urljoin(BASEURL, img_url)
             name = photo['name']
-            online_list.append((url, os.path.join(BASE_DIR, title, name.replace('|',''))))
+            # online_list.append((url, os.path.join(BASE_DIR, title, name.replace('|',''))))s
 
     with open("/home/pi/Desktop/config.json", "r") as jsonFile:
         config = json.load(jsonFile)
@@ -176,17 +176,17 @@ def download_files(online_list, existing_files):
 
 
 if __name__ == '__main__':
-    data = fetch_data()
+    # data = fetch_data()
     InstiAppData = fetchInsti()
 
     print("Script running at- " + str(datetime.datetime.now()))
 
-    print("Hostel noticeboard urls")
-    online_list = prepare_online_list(data)
-    print("updating Hostel images")
-    existing_files = prepare_existing_list(online_list)
-    print("Downloading Hostel images")
-    download_files(online_list, existing_files)
+    # print("Hostel noticeboard urls")
+    # online_list = prepare_online_list(data)
+    # print("updating Hostel images")
+    # existing_files = prepare_existing_list(online_list)
+    # print("Downloading Hostel images")
+    # download_files(online_list, existing_files)
 
     print("InstiApp urls")
     Insti_online_list = InstiApp_online(InstiAppData)
